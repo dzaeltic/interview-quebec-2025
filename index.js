@@ -67,7 +67,7 @@ words in this string will contain random numbers. This function must output a
 new string where the numbers are surrounded by parentheses.
 
 example:
-addParenthesis("1alex, francis2, aar3on"); // => (1)alex, francis(2), aar(3)on
+addParenthesis("1alex, francis2, aar3on"); // => "(1)alex, francis(2), aar(3)on"
 */
 
 function addParenthesis(string){
