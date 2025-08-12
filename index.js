@@ -64,7 +64,8 @@ const watchList = [
 /*
 Create a function called addParenthesis that takes in one input - `string`. This
 words in this string will contain random numbers. This function must output a 
-new string where the numbers are surrounded by parentheses.
+new string where the numbers are surrounded by parentheses. Your solution must
+use regex.
 
 example:
 addParenthesis("1alex, francis2, aar3on"); // => "(1)alex, francis(2), aar(3)on"
