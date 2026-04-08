@@ -61,27 +61,17 @@ const watchList = [
   }
 ];
 
-/*
-Create a function called addParenthesis that takes in one input - `string`. This
-words in this string will contain random numbers. This function must output a 
-new string where the numbers are surrounded by parentheses. Your solution must
-use regex.
-
-example:
-addParenthesis("1alex, francis2, aar3on"); // => "(1)alex, francis(2), aar(3)on"
-*/
-
-function addParenthesis(string){
- 
-}
 
 
 /*
 Use the native filter method to return a new array of only the comedy films made in
 the 1940s.
 */
-
+                                                
 let fortiesComedies;
+
+
+
 
 /*
 Use the native filter method to return a new array of only the films from the watchlist
@@ -89,7 +79,6 @@ that are streaming on a platform that doesn't require payment.
 */
 
 let freeToStream;
-
 
 
 
@@ -107,6 +96,14 @@ platform it is available to stream.
 */
 
 let mappedStrings;
+
+/*
+Use the native reduce method to return an array of the titles
+that are dramas.
+*/
+
+
+let dramaTitles;
 
 /*
 Use the native map method to return a new array of objects. Each object should have a key of the
