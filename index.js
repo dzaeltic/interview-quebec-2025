@@ -68,7 +68,12 @@ Use the native filter method to return a new array of only the comedy films made
 the 1940s.
 */
                                                 
-let fortiesComedies;
+let fortiesComedies = arr => {
+//filter movies down to comedies release in 1940s
+  arr.filter(movie => {
+    movie.genreTags.includes('Comedy') && movie.year >= 1940 && movie.year <= 1950
+  })
+};
 
 
 
@@ -78,8 +83,9 @@ Use the native filter method to return a new array of only the films from the wa
 that are streaming on a platform that doesn't require payment.
 */
 
-let freeToStream;
-
+let freeToStream = arr => {
+  return arr.filter(movie => movie.streaming.filter(stream => stream.paid === false).length);
+}
 
 
 /*
@@ -95,7 +101,7 @@ platform it is available to stream.
  ]
 */
 
-let mappedStrings;
+let mappedStrings = arr => arr.map(movie => `${movie.title} - Available to stream on ${movie.streaming[0]}`);
 
 /*
 Use the native reduce method to return an array of the titles
@@ -103,8 +109,14 @@ that are dramas.
 */
 
 
-let dramaTitles;
-
+let dramaTitles = arr => {
+  return arr.reduce((titles, movie) => {
+    if (movie.genreTags.includes('Drama')) {
+      titles.push(movie.title);
+    }
+    return titles;
+  }, [])
+}
 /*
 Use the native map method to return a new array of objects. Each object should have a key of the
 film's streaming platform, and the value of "free" if the value at the platform's paid property is
